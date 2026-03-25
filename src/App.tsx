@@ -3,8 +3,10 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
+import ServiceDetail from './pages/ServiceDetail';
 import Industries from './pages/Industries';
 import Insights from './pages/Insights';
+import InsightArticle from './pages/InsightArticle';
 import Tools from './pages/Tools';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
@@ -18,8 +20,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/:id" element={<ServiceDetail />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/insights" element={<Insights />} />
+          <Route path="/insights/article" element={<InsightArticle />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
