@@ -121,61 +121,7 @@ export default function ServiceDetail() {
       </section>
 
       {/* Rich Sections (McKinsey Style Scrolling) */}
-      {service.richSections && (
-        <section className="py-12 bg-slate-50">
-          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mb-20">
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900">Deep Dive</h2>
-              <div className="w-24 h-1 bg-emerald-700 mt-6"></div>
-            </div>
-            
-            <div className="space-y-32">
-              {service.richSections.map((section: any, idx: number) => (
-                <div key={idx} className={`flex flex-col ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 lg:gap-24 items-center`}>
-                  
-                  {/* Image with Parallax Reveal */}
-                  <motion.div 
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true, margin: "-20%" }}
-                    transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                    className="w-full lg:w-1/2 relative aspect-[4/3] overflow-hidden"
-                  >
-                    <motion.img 
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.8, ease: "easeOut" }}
-                      src={section.image} 
-                      alt={section.title}
-                      className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
-                    />
-                  </motion.div>
-
-                  {/* Text Content */}
-                  <motion.div 
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-20%" }}
-                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                    className="w-full lg:w-1/2"
-                  >
-                    <div className="text-emerald-700 font-bold tracking-widest uppercase text-sm mb-4">
-                      Insight {String(idx + 1).padStart(2, '0')}
-                    </div>
-                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6 leading-tight">
-                      {section.title}
-                    </h3>
-                    <p className="text-lg text-slate-600 leading-relaxed font-light">
-                      {section.content}
-                    </p>
-                  </motion.div>
-
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+      {/* Removed per user request */}
 
       {/* CTA Section */}
       <section className="py-24 bg-emerald-950 text-white">

@@ -21,6 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Link to="/" className="font-serif text-3xl font-bold tracking-tight text-emerald-950">AstraESG</Link>
               
               <div className="hidden lg:flex items-center space-x-8">
+                <Link to="/" className="text-sm font-semibold text-slate-800 hover:text-emerald-700 transition-colors">Home</Link>
                 <Link to="/insights" className="text-sm font-semibold text-slate-800 hover:text-emerald-700 transition-colors">Insights</Link>
                 <Link to="/services" className="text-sm font-semibold text-slate-800 hover:text-emerald-700 transition-colors">Capabilities</Link>
                 <Link to="/industries" className="text-sm font-semibold text-slate-800 hover:text-emerald-700 transition-colors">Industries</Link>
@@ -49,6 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-4 shadow-lg absolute w-full">
+            <Link to="/" className="block text-lg font-serif font-bold text-slate-900 hover:text-emerald-700">Home</Link>
             <Link to="/insights" className="block text-lg font-serif font-bold text-slate-900 hover:text-emerald-700">Insights</Link>
             <Link to="/services" className="block text-lg font-serif font-bold text-slate-900 hover:text-emerald-700">Capabilities</Link>
             <Link to="/industries" className="block text-lg font-serif font-bold text-slate-900 hover:text-emerald-700">Industries</Link>
