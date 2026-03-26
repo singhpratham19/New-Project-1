@@ -572,7 +572,7 @@ export const servicesData: Service[] = [
       'On-ground deployment of renewable energy and waste systems'
     ],
     fullText: [
-      'esgAAstra is not just an advisory firm; we are your implementation partner. We understand that the real challenge in ESG lies in execution, particularly in complex sectors like manufacturing.',
+      'ESGastraa is not just an advisory firm; we are your implementation partner. We understand that the real challenge in ESG lies in execution, particularly in complex sectors like manufacturing.',
       'Our unique model leverages a vast network of vetted service providers—engineers, installers, auditors, and technologists. We project manage the entire transition, ensuring that the high-level strategies we design are translated into tangible, on-the-ground realities that meet global standards.'
     ],
     category: 'ESG Strategy & Reporting'

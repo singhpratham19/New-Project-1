@@ -75,7 +75,7 @@ export default function Services() {
                 Beyond Consulting: <br/><span className="text-emerald-700">End-to-End Execution</span>
               </h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                We don't just deliver a strategy and walk away. esgAAstra is backed by an <strong>army of specialized service providers</strong>—from renewable energy installers and waste management experts to industrial engineers.
+                We don't just deliver a strategy and walk away. ESGastraa is backed by an <strong>army of specialized service providers</strong>—from renewable energy installers and waste management experts to industrial engineers.
               </p>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                 We orchestrate the entire implementation process, ensuring every step adheres to strict global ESG standards. Our turnkey solutions are specifically tailored for the complexities of the <strong>manufacturing sector</strong>, turning high-level boardroom strategies into on-the-ground operational realities.

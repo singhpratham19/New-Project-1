@@ -62,7 +62,7 @@ export default function About() {
                   Born from a conviction the world deserves better ESG advisory.
                 </motion.h2>
                 <motion.p {...fadeIn} transition={{ delay: 0.2 }} className="text-base text-slate-600 font-light leading-relaxed">
-                  We saw a landscape filled with fragmented advice and performative reporting. We built ESGAastra to change that narrative, bringing rigorous strategy and actionable consulting to sustainability.
+                  We saw a landscape filled with fragmented advice and performative reporting. We built ESGastraa to change that narrative, bringing rigorous strategy and actionable consulting to sustainability.
                 </motion.p>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function About() {
                 <motion.div {...fadeIn} className="border-t border-slate-300 pt-8 pb-16">
                   <h3 className="text-xs font-bold text-emerald-700 uppercase tracking-widest mb-4">03 / The Solution</h3>
                   <p className="text-xl md:text-2xl font-serif text-slate-900 leading-snug">
-                    ESGAastra was built as a premier ESG consultancy — combining deep strategic advisory with practical implementation to drive real-world impact.
+                    ESGastraa was built as a premier ESG consultancy — combining deep strategic advisory with practical implementation to drive real-world impact.
                   </p>
                 </motion.div>
 

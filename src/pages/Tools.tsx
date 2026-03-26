@@ -35,7 +35,7 @@ export default function Tools() {
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-100/50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-6 rounded-full">
                 <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-                esgAAstra Software Platform
+                ESGastraa Software Platform
               </div>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 leading-[1.1] tracking-tight">
                 Enterprise-grade <span className="text-emerald-700">ESG data</span> management.
@@ -74,7 +74,7 @@ export default function Tools() {
                   <div className="w-3 h-3 rounded-full bg-slate-300"></div>
                   <div className="w-3 h-3 rounded-full bg-slate-300"></div>
                   <div className="w-3 h-3 rounded-full bg-slate-300"></div>
-                  <div className="ml-4 text-xs font-mono text-slate-400">esgaastra.app / dashboard</div>
+                  <div className="ml-4 text-xs font-mono text-slate-400">esgastraa.app / dashboard</div>
                 </div>
                 
                 {/* Dashboard Content */}
@@ -248,7 +248,7 @@ export default function Tools() {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Ready to streamline your ESG reporting?</h2>
             <p className="text-xl text-emerald-100 mb-10 font-light">
-              Join leading enterprises using esgAAstra to turn compliance into a competitive advantage.
+              Join leading enterprises using ESGastraa to turn compliance into a competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link to="/contact" className="bg-white text-emerald-900 px-8 py-4 rounded-lg font-bold hover:bg-slate-100 transition-colors text-lg shadow-xl">

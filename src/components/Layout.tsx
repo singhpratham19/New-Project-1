@@ -18,7 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center gap-12">
-              <Link to="/" className="font-serif text-3xl font-bold tracking-tight text-emerald-950">esgAAstra</Link>
+              <Link to="/" className="font-serif text-3xl font-bold tracking-tight text-emerald-950">ESGastraa</Link>
               
               <div className="hidden lg:flex items-center space-x-8">
                 <Link to="/" className="text-sm font-semibold text-slate-800 hover:text-emerald-700 transition-colors">Home</Link>
@@ -104,7 +104,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
             <div className="lg:col-span-2">
-              <span className="font-serif text-3xl font-bold text-white mb-6 block">esgAAstra</span>
+              <span className="font-serif text-3xl font-bold text-white mb-6 block">ESGastraa</span>
               <p className="text-sm leading-relaxed mb-8 max-w-sm text-slate-400">
                 India's premier ESG consulting firm, empowering businesses to achieve sustainable growth, regulatory compliance, and long-term value creation.
               </p>
@@ -167,7 +167,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           
           <div className="pt-8 border-t border-slate-800 text-xs flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-slate-500">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-6">
-              <p>&copy; {new Date().getFullYear()} esgAAstra Consulting Pvt. Ltd. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} ESGastraa Consulting Pvt. Ltd. All rights reserved.</p>
               <span className="hidden md:inline">|</span>
               <p>GSTIN: 22AAAAA0000A1Z5</p>
             </div>

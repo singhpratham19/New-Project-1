@@ -79,7 +79,7 @@ export default function InsightArticleBRSR() {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-0 right-0 bg-white/90 backdrop-blur-sm px-4 py-2 text-xs text-slate-500 font-medium">
-                © esgAAstra Insights
+                © ESGastraa Insights
               </div>
             </div>
           </motion.div>
@@ -179,7 +179,7 @@ export default function InsightArticleBRSR() {
                 </p>
 
                 <p>
-                  At esgAAstra, we help organizations navigate the complexities of the BRSR Core, ensuring compliance while unlocking the strategic value of sustainability. Our team of experts provides end-to-end support, from data collection and assurance to strategic advisory and capacity building.
+                  At ESGastraa, we help organizations navigate the complexities of the BRSR Core, ensuring compliance while unlocking the strategic value of sustainability. Our team of experts provides end-to-end support, from data collection and assurance to strategic advisory and capacity building.
                 </p>
               </div>
 
@@ -189,12 +189,12 @@ export default function InsightArticleBRSR() {
                 <div className="grid sm:grid-cols-2 gap-8">
                   <div>
                     <p className="text-sm text-slate-700 leading-relaxed">
-                      <strong>Priya Patel</strong> is the Director of ESG Reporting at esgAAstra, specializing in regulatory compliance and sustainability disclosures.
+                      <strong>Priya Patel</strong> is the Director of ESG Reporting at ESGastraa, specializing in regulatory compliance and sustainability disclosures.
                     </p>
                   </div>
                   <div>
                     <p className="text-sm text-slate-700 leading-relaxed">
-                      <strong>Dr. Ananya Sharma</strong> is the Managing Partner at esgAAstra, with over two decades of experience in environmental science and corporate sustainability.
+                      <strong>Dr. Ananya Sharma</strong> is the Managing Partner at ESGastraa, with over two decades of experience in environmental science and corporate sustainability.
                     </p>
                   </div>
                 </div>
