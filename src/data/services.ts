@@ -162,7 +162,7 @@ export const servicesData: Service[] = [
     title: 'Water Stewardship & Management',
     subtitle: 'Comprehensive water risk assessment, efficiency optimization, and stewardship strategies',
     desc: 'Mitigate water-related risks and enhance operational resilience through advanced water stewardship and management practices.',
-    img: 'https://images.unsplash.com/photo-1541888087405-131109f022ce?q=80&w=1200&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop',
     points: [
       'Water footprinting and risk assessment',
       'Water efficiency and recycling optimization',
@@ -216,7 +216,7 @@ export const servicesData: Service[] = [
     title: 'Biodiversity & TNFD Assessment',
     subtitle: 'Evaluate and manage nature-related risks and opportunities aligned with TNFD',
     desc: 'Understand your impact on biodiversity and integrate nature-related risks into your corporate strategy using the TNFD framework.',
-    img: 'https://images.unsplash.com/photo-1500829243541-74b676fecc20?q=80&w=1200&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200&auto=format&fit=crop',
     points: [
       'Nature-related risk and opportunity assessment',
       'TNFD framework alignment and reporting',

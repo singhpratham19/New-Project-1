@@ -106,68 +106,87 @@ export default function Services() {
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="absolute -bottom-8 -left-8 bg-emerald-900 text-white p-8 rounded-lg shadow-xl max-w-xs hidden md:block">
-                <div className="font-serif text-xl font-bold mb-2">Manufacturing Focus</div>
-                <p className="text-emerald-100 text-sm">Deep expertise in retrofitting heavy industries, optimizing supply chains, and deploying physical ESG infrastructure.</p>
-              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Services List - McKinsey Style Grid Layout */}
+      {/* Our Practice Clubs */}
       <section className="py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-          
-          {[
-            "ESG Strategy & Reporting",
-            "Climate & Environment",
-            "Social & Supply Chain",
-            "Governance & Sustainable Finance",
-            "Technology & Capacity Building"
-          ].map((category) => {
-            const categoryServices = servicesData.filter(s => s.category === category);
-            if (categoryServices.length === 0) return null;
-            
-            return (
-              <div key={category} className="mb-20 last:mb-0">
-                <div className="border-t-2 border-slate-900 pt-6 mb-12 flex items-center justify-between group">
-                  <Link to={`/services/category/${categorySlugs[category]}`}>
-                    <h2 className="text-2xl font-serif font-bold text-slate-900 group-hover:text-emerald-700 transition-colors flex items-center gap-2">
-                      {category}
-                      <ArrowRight className="w-5 h-5 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
-                    </h2>
-                  </Link>
-                  <Link to={`/services/category/${categorySlugs[category]}`} className="hidden md:flex items-center text-sm font-bold text-emerald-700 hover:text-emerald-800 transition-colors">
-                    View All {categoryServices.length} Services
-                  </Link>
+          <div className="mb-16">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">Our Practice Clubs</h2>
+            <p className="text-lg text-slate-600 max-w-3xl">
+              Explore our specialized practice areas. Each club brings together deep domain expertise, proprietary methodologies, and end-to-end execution capabilities to solve your most complex sustainability challenges.
+            </p>
+          </div>
+
+          <div className="space-y-24">
+            {[
+              {
+                title: "ESG Strategy & Reporting",
+                slug: "esg-strategy-reporting",
+                desc: "Navigate the complex landscape of sustainability disclosures and strategic planning. We help organizations align their business goals with global ESG frameworks, ensuring compliance with BRSR, GRI, TCFD, and SASB while driving long-term value creation.",
+                img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop"
+              },
+              {
+                title: "Climate & Environment",
+                slug: "climate-environment",
+                desc: "Accelerate your transition to a low-carbon economy. Our experts provide science-based decarbonization pathways, climate risk analysis, and comprehensive environmental management solutions to mitigate risks and seize climate opportunities.",
+                img: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop"
+              },
+              {
+                title: "Social & Supply Chain",
+                slug: "social-supply-chain",
+                desc: "Build resilient, ethical, and inclusive value chains. We specialize in human rights due diligence, supply chain sustainability audits, and social impact assessments to ensure your operations positively impact communities and workers.",
+                img: "https://images.unsplash.com/photo-1586528116311-ad8ed7c80a74?q=80&w=1200&auto=format&fit=crop"
+              },
+              {
+                title: "Governance & Sustainable Finance",
+                slug: "governance-sustainable-finance",
+                desc: "Strengthen corporate oversight and unlock green capital. We advise boards on ESG integration and assist organizations in improving ESG ratings, conducting investor due diligence, and structuring sustainable finance instruments.",
+                img: "https://images.unsplash.com/photo-1556761175-5973dc0f32b7?q=80&w=1200&auto=format&fit=crop"
+              },
+              {
+                title: "Technology & Capacity Building",
+                slug: "technology-capacity-building",
+                desc: "Empower your workforce and streamline data with cutting-edge ESG technology. We offer proprietary carbon calculation tools, data management platforms, and comprehensive training programs to embed sustainability into your corporate DNA.",
+                img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+              }
+            ].map((club, index) => (
+              <div key={club.slug} className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 items-center`}>
+                <div className="w-full lg:w-1/2">
+                  <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-xl relative group">
+                    <img 
+                      src={club.img} 
+                      alt={club.title} 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                  </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
-                  {categoryServices.map((service) => (
-                    <Link to={`/services/${service.id}`} key={service.id} className="group block">
-                      <div className="relative p-4 -m-4 rounded-sm transition-all duration-300 hover:bg-white hover:shadow-[0_0_40px_rgba(0,0,0,0.1)] hover:z-10 h-full flex flex-col">
-                        <div className="aspect-[3/2] overflow-hidden mb-5">
-                          <img 
-                            src={service.img} 
-                            alt={service.title} 
-                            className="w-full h-full object-cover"
-                            referrerPolicy="no-referrer"
-                          />
-                        </div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-3 flex items-center">
-                          {service.title}
-                          <ChevronRight className="w-5 h-5 ml-1 text-blue-600" strokeWidth={3} />
-                        </h3>
-                        <p className="text-slate-700 text-base leading-relaxed line-clamp-4">
-                          {service.desc}
-                        </p>
-                      </div>
-                    </Link>
-                  ))}
+                <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-widest mb-4 w-fit">
+                    Practice Club
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
+                    {club.title}
+                  </h2>
+                  <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                    {club.desc}
+                  </p>
+                  <Link 
+                    to={`/services/category/${club.slug}`} 
+                    className="inline-flex items-center gap-2 text-emerald-700 font-bold hover:text-emerald-800 transition-colors group w-fit"
+                  >
+                    Explore {club.title} Services
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
                 </div>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </section>
 
