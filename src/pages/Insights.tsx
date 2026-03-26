@@ -12,7 +12,7 @@ export default function Insights() {
 
   const insights = [
     { tag: "Report", title: "The net-zero transition: What it would cost, what it could bring", date: "March 15, 2026", img: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=600&auto=format&fit=crop", link: "/insights/article" },
-    { tag: "Regulatory Update", title: "SEBI's New BRSR Core Guidelines Explained", date: "March 10, 2026", img: "https://picsum.photos/seed/sebi/600/400", link: "/insights" },
+    { tag: "Regulatory Update", title: "SEBI's New BRSR Core Guidelines Explained", date: "March 10, 2026", img: "https://picsum.photos/seed/sebi/600/400", link: "/insights/brsr-core" },
     { tag: "Whitepaper", title: "Navigating Scope 3 Emissions in Indian Manufacturing", date: "March 02, 2026", img: "https://picsum.photos/seed/factoryemissions/600/400", link: "/insights" },
     { tag: "Blog Post", title: "The ROI of ESG: Why Indian SMEs Can't Afford to Wait", date: "February 28, 2026", img: "https://picsum.photos/seed/smebusiness/600/400", link: "/insights" },
     { tag: "Guide", title: "Carbon Accounting 101 for Financial Institutions", date: "February 15, 2026", img: "https://picsum.photos/seed/financeguide/600/400", link: "/insights" },

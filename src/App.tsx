@@ -7,6 +7,7 @@ import ServiceDetail from './pages/ServiceDetail';
 import Industries from './pages/Industries';
 import Insights from './pages/Insights';
 import InsightArticle from './pages/InsightArticle';
+import InsightArticleBRSR from './pages/InsightArticleBRSR';
 import Tools from './pages/Tools';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/industries" element={<Industries />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/insights/article" element={<InsightArticle />} />
+          <Route path="/insights/brsr-core" element={<InsightArticleBRSR />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />

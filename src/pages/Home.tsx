@@ -113,17 +113,21 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <motion.div {...fadeIn} className="lg:col-span-7 group cursor-pointer">
               <div className="aspect-[16/9] overflow-hidden mb-6">
-                <img 
-                  src="https://picsum.photos/seed/sebi/1000/600" 
-                  alt="BRSR Core" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  referrerPolicy="no-referrer"
-                />
+                <Link to="/insights/brsr-core">
+                  <img 
+                    src="https://picsum.photos/seed/sebi/1000/600" 
+                    alt="BRSR Core" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    referrerPolicy="no-referrer"
+                  />
+                </Link>
               </div>
               <div className="text-xs font-bold text-emerald-700 uppercase tracking-widest mb-3">Report &bull; March 2026</div>
-              <h3 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4 group-hover:text-emerald-800 transition-colors leading-tight">
-                The CEO's Guide to SEBI's BRSR Core: Moving from Compliance to Value Creation
-              </h3>
+              <Link to="/insights/brsr-core">
+                <h3 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4 group-hover:text-emerald-800 transition-colors leading-tight">
+                  The CEO's Guide to SEBI's BRSR Core: Moving from Compliance to Value Creation
+                </h3>
+              </Link>
               <p className="text-lg text-slate-600 mb-6 max-w-2xl">
                 As India's top 1000 listed entities navigate the new BRSR Core requirements, leaders must look beyond the checklist to uncover operational efficiencies and supply chain resilience.
               </p>
