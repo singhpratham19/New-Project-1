@@ -17,7 +17,7 @@ export default function About() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeIn} className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-slate-900 mb-6 leading-tight">
-              About AstraESG
+              About esgAAstra
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               We are a collective of environmental scientists, financial analysts, and strategic thinkers dedicated to guiding India's corporate landscape toward a sustainable, net-zero future.

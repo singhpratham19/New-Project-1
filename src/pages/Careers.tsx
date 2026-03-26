@@ -22,7 +22,7 @@ export default function Careers() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeIn} className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-slate-900 mb-6 leading-tight">
-              Careers at AstraESG
+              Careers at esgAAstra
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               Shape the future of sustainable business. We are looking for driven individuals who want to make a measurable impact.
@@ -40,7 +40,7 @@ export default function Careers() {
             <motion.div {...fadeIn} className="flex flex-col justify-center">
               <h2 className="text-3xl font-serif font-bold text-slate-900 mb-6">Our Culture</h2>
               <p className="text-lg text-slate-600 mb-6">
-                At AstraESG, we foster a culture of continuous learning, rigorous analysis, and collaborative problem-solving. Our consultants work alongside industry leaders to tackle some of the most pressing environmental and social challenges of our time.
+                At esgAAstra, we foster a culture of continuous learning, rigorous analysis, and collaborative problem-solving. Our consultants work alongside industry leaders to tackle some of the most pressing environmental and social challenges of our time.
               </p>
               <ul className="space-y-4 text-slate-700 font-medium">
                 <li className="flex items-center gap-3"><div className="w-2 h-2 bg-emerald-700 rounded-full"></div> Impact-driven projects</li>

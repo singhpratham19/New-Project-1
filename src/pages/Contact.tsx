@@ -18,7 +18,7 @@ export default function Contact() {
               Get in touch
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              Partner with AstraESG to navigate your sustainability journey. Reach out to our experts for a consultation.
+              Partner with esgAAstra to navigate your sustainability journey. Reach out to our experts for a consultation.
             </p>
           </motion.div>
         </div>
@@ -65,9 +65,9 @@ export default function Contact() {
                 <div>
                   <h4 className="text-xl font-bold text-slate-900 mb-4">Mumbai (Headquarters)</h4>
                   <div className="space-y-3 text-slate-600">
-                    <p className="flex items-start gap-3"><MapPin className="w-5 h-5 text-emerald-700 shrink-0" /> AstraESG Tower, BKC, Mumbai, Maharashtra 400051</p>
+                    <p className="flex items-start gap-3"><MapPin className="w-5 h-5 text-emerald-700 shrink-0" /> esgAAstra Tower, BKC, Mumbai, Maharashtra 400051</p>
                     <p className="flex items-center gap-3"><Phone className="w-5 h-5 text-emerald-700 shrink-0" /> +91 22 4000 5000</p>
-                    <p className="flex items-center gap-3"><Mail className="w-5 h-5 text-emerald-700 shrink-0" /> contact@astraesg.com</p>
+                    <p className="flex items-center gap-3"><Mail className="w-5 h-5 text-emerald-700 shrink-0" /> contact@esgaastra.com</p>
                   </div>
                 </div>
                 
