@@ -38,8 +38,7 @@ export default function InsightArticleBRSR() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between py-6 border-y border-slate-200 mb-12 gap-6">
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-slate-900">
                   <span className="text-slate-500">By</span>
-                  <a href="#" className="hover:text-emerald-700 underline underline-offset-4 decoration-slate-300">Priya Patel</a>
-                  <a href="#" className="hover:text-emerald-700 underline underline-offset-4 decoration-slate-300">Dr. Ananya Sharma</a>
+                  <a href="#" className="hover:text-emerald-700 underline underline-offset-4 decoration-slate-300">PRATHAM SINGH</a>
                 </div>
                 
                 <div className="flex items-center gap-4 text-slate-500">
