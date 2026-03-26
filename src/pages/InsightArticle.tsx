@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Share2, Printer, Linkedin, Twitter, Mail, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import AISummary from '../components/AISummary';
 
 export default function InsightArticle() {
   const fadeIn = {
@@ -9,6 +10,14 @@ export default function InsightArticle() {
     viewport: { once: true, margin: "-100px" },
     transition: { duration: 0.6, ease: "easeOut" }
   };
+
+  const articleContent = `
+    The science is clear: to avert the worst impacts of climate change, the global economy must transition to net-zero emissions. But what would this transition actually entail for the economy?
+    In a new report, we simulate a hypothetical transition to net-zero emissions by 2050, examining the economic and societal adjustments required. The research looks at the transition's impact on demand, capital allocation, costs, and jobs, assessing these factors at the level of sectors and geographies.
+    The transition would be universal. Every country and every sector of the economy would be affected. It would also be significant. We estimate that capital spending on physical assets for energy and land-use systems in the net-zero transition would amount to about $275 trillion, or $9.2 trillion per year on average, an annual increase of as much as $3.5 trillion from today.
+    To put this in perspective, the $3.5 trillion increase is equivalent to half of global corporate profits, a quarter of total tax revenue, and 7 percent of household spending. An additional $1 trillion of today's annual spend would need to be reallocated from high-emissions to low-emissions assets.
+    The transition would be front-loaded: spending would rise from 6.8 percent of GDP today to about 9 percent of GDP between 2026 and 2030 before falling.
+  `;
 
   return (
     <div className="bg-white min-h-screen">
@@ -79,6 +88,8 @@ export default function InsightArticle() {
             
             {/* Main Content */}
             <div className="lg:col-span-8">
+              <AISummary articleContent={articleContent} />
+              
               <div className="prose prose-lg prose-slate max-w-none prose-headings:font-serif prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-p:leading-relaxed prose-p:text-slate-700 prose-a:text-emerald-700 prose-a:underline-offset-4 hover:prose-a:text-emerald-800">
                 
                 <p className="lead text-2xl text-slate-900 font-light mb-10">

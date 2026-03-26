@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Share2, Printer, Linkedin, Twitter, Mail, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import AISummary from '../components/AISummary';
 
 export default function InsightArticleBRSR() {
   const fadeIn = {
@@ -9,6 +10,15 @@ export default function InsightArticleBRSR() {
     viewport: { once: true, margin: "-100px" },
     transition: { duration: 0.6, ease: "easeOut" }
   };
+
+  const articleContent = `
+    The regulatory landscape in India is shifting rapidly. With the introduction of the Business Responsibility and Sustainability Reporting (BRSR) Core, SEBI has raised the bar for corporate transparency and accountability.
+    The BRSR Core is a subset of the broader BRSR framework, focusing on specific key performance indicators (KPIs) that are critical for assessing a company's ESG performance. It aims to enhance the reliability and comparability of ESG disclosures, making it easier for investors and stakeholders to evaluate companies.
+    The BRSR Core mandates disclosures across several critical areas, including greenhouse gas (GHG) emissions, water usage, waste management, and employee well-being. Unlike the comprehensive BRSR, the Core focuses on quantifiable metrics that provide a clear picture of a company's environmental and social impact.
+    The BRSR Core is not just a compliance exercise; it is a strategic tool that can help companies identify risks, optimize operations, and build trust with stakeholders.
+    One of the most significant aspects of the BRSR Core is the requirement for reasonable assurance. This means that an independent auditor must verify the accuracy and completeness of the disclosed data. This requirement adds a layer of credibility to the reports, ensuring that the information provided is reliable and trustworthy.
+    Furthermore, the BRSR Core introduces the concept of value chain reporting. Companies are now required to disclose the ESG performance of their supply chain partners, extending accountability beyond their immediate operations. This is a crucial step towards building resilient and sustainable supply chains.
+  `;
 
   return (
     <div className="bg-white min-h-screen">
@@ -79,6 +89,8 @@ export default function InsightArticleBRSR() {
             
             {/* Main Content */}
             <div className="lg:col-span-8">
+              <AISummary articleContent={articleContent} />
+              
               <div className="prose prose-lg prose-slate max-w-none prose-headings:font-serif prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-p:leading-relaxed prose-p:text-slate-700 prose-a:text-emerald-700 prose-a:underline-offset-4 hover:prose-a:text-emerald-800">
                 
                 <p className="lead text-2xl text-slate-900 font-light mb-10">
