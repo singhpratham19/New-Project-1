@@ -51,67 +51,137 @@ export default function Services() {
               Our Capabilities
             </motion.div>
             <motion.h1 variants={staggerItem} className="text-5xl md:text-7xl font-serif font-bold text-white mb-8 leading-tight">
-              Deep expertise for complex sustainability challenges.
+              From boardroom strategy to on-ground execution.
             </motion.h1>
             <motion.p variants={staggerItem} className="text-xl md:text-2xl text-slate-300 leading-relaxed font-light max-w-3xl">
-              We bring rigorous analytical capabilities, proprietary data, and deep industry experience to help organizations navigate the transition to a sustainable economy.
+              We go beyond consulting. With an army of specialized service providers, we deliver end-to-end ESG solutions—designing the strategy and implementing every step, especially for the manufacturing sector.
             </motion.p>
           </motion.div>
         </div>
       </section>
 
-      {/* Services List - Typography Focused Layout */}
+      {/* End-to-End Implementation Highlight */}
+      <section className="py-20 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6 leading-tight">
+                Beyond Consulting: <br/><span className="text-emerald-700">End-to-End Execution</span>
+              </h2>
+              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+                We don't just deliver a strategy and walk away. AstraESG is backed by an <strong>army of specialized service providers</strong>—from renewable energy installers and waste management experts to industrial engineers.
+              </p>
+              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                We orchestrate the entire implementation process, ensuring every step adheres to strict global ESG standards. Our turnkey solutions are specifically tailored for the complexities of the <strong>manufacturing sector</strong>, turning high-level boardroom strategies into on-the-ground operational realities.
+              </p>
+              <div className="grid grid-cols-2 gap-6">
+                <div className="border-l-2 border-emerald-700 pl-4">
+                  <div className="text-3xl font-serif font-bold text-slate-900 mb-1">500+</div>
+                  <div className="text-sm font-bold text-slate-500 uppercase tracking-wider">Implementation Partners</div>
+                </div>
+                <div className="border-l-2 border-emerald-700 pl-4">
+                  <div className="text-3xl font-serif font-bold text-slate-900 mb-1">100%</div>
+                  <div className="text-sm font-bold text-slate-500 uppercase tracking-wider">Turnkey Execution</div>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="relative"
+            >
+              <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop" 
+                  alt="Manufacturing Implementation" 
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="absolute -bottom-8 -left-8 bg-emerald-900 text-white p-8 rounded-lg shadow-xl max-w-xs hidden md:block">
+                <div className="font-serif text-xl font-bold mb-2">Manufacturing Focus</div>
+                <p className="text-emerald-100 text-sm">Deep expertise in retrofitting heavy industries, optimizing supply chains, and deploying physical ESG infrastructure.</p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services List - End-to-End Style Layout */}
       <section className="py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-16 md:gap-24">
-            {servicesData.map((service, index) => (
-              <div key={service.id} id={service.id} className="group">
-                {/* Animated Divider Line */}
-                {index > 0 && (
+          <div className="flex flex-col gap-24 md:gap-32">
+            {servicesData.map((service, index) => {
+              const isEven = index % 2 === 0;
+              return (
+                <div key={service.id} id={service.id} className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${!isEven ? 'lg:flex-row-reverse' : ''}`}>
+                  
+                  {/* Text Content */}
                   <motion.div 
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
+                    initial={{ opacity: 0, x: isEven ? -30 : 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                    className="h-px bg-slate-200 mb-16 md:mb-24"
-                  />
-                )}
-
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                  className="grid lg:grid-cols-12 gap-8 lg:gap-16"
-                >
-                  {/* Left Column: Title & Subtitle */}
-                  <div className="lg:col-span-5">
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                  >
                     <div className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-4">
                       Practice Area {String(index + 1).padStart(2, '0')}
                     </div>
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4 group-hover:text-emerald-800 transition-colors">
-                      <Link to={`/services/${service.id}`}>{service.title}</Link>
+                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
+                      {service.title}
                     </h2>
                     <h3 className="text-xl font-medium text-slate-700 mb-6 italic">
                       {service.subtitle}
                     </h3>
-                  </div>
-
-                  {/* Right Column: Description & Link */}
-                  <div className="lg:col-span-7 flex flex-col justify-center">
-                    <p className="text-lg text-slate-600 leading-relaxed mb-8 font-light">
+                    <p className="text-lg text-slate-600 leading-relaxed mb-8">
                       {service.desc}
                     </p>
                     
-                    <div>
-                      <Link to={`/services/${service.id}`} className="inline-flex items-center gap-2 text-emerald-700 font-bold hover:text-emerald-800 transition-colors text-lg group-hover:gap-4 duration-300">
-                        Explore this capability <ArrowRight className="w-5 h-5" />
-                      </Link>
+                    <ul className="space-y-3 mb-8">
+                      {service.points.slice(0, 3).map((point, i) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <div className="w-1.5 h-1.5 rounded-full bg-emerald-700 mt-2.5 shrink-0"></div>
+                          <span className="text-slate-700">{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <Link to={`/services/${service.id}`} className="inline-flex items-center gap-2 bg-emerald-900 text-white px-6 py-3 font-bold hover:bg-emerald-800 transition-colors rounded-lg shadow-md">
+                      Explore this capability <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </motion.div>
+
+                  {/* Image Content */}
+                  <motion.div 
+                    initial={{ opacity: 0, x: isEven ? 30 : -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="relative"
+                  >
+                    <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-2xl">
+                      <img 
+                        src={service.img} 
+                        alt={service.title} 
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                        referrerPolicy="no-referrer"
+                      />
                     </div>
-                  </div>
-                </motion.div>
-              </div>
-            ))}
+                    <div className={`absolute -bottom-8 ${isEven ? '-left-8' : '-right-8'} bg-emerald-900 text-white p-6 rounded-lg shadow-xl max-w-xs hidden md:block z-10`}>
+                      <div className="font-serif text-lg font-bold mb-2">End-to-End Approach</div>
+                      <p className="text-emerald-100 text-sm leading-relaxed">From strategic planning to on-ground implementation and continuous monitoring.</p>
+                    </div>
+                  </motion.div>
+
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -123,5 +123,23 @@ export const servicesData = [
       "We help organizations build resilient, sustainable supply chains. Our approach begins with comprehensive risk heat-mapping to identify high-risk vendors and critical vulnerabilities. We then work collaboratively with suppliers to build capacity, improve practices, and ensure compliance with international standards.",
       "By integrating ESG criteria into procurement policies and supplier evaluation frameworks, we help clients transform their supply chains from a source of risk into a source of competitive advantage."
     ]
+  },
+  {
+    id: "end-to-end-implementation",
+    title: "End-to-End ESG Implementation",
+    subtitle: "From boardroom strategy to factory floor execution.",
+    desc: "We don't just stop at consulting. We provide full-stack, end-to-end ESG solutions. Backed by an army of specialized service providers, we implement every step of your sustainability journey—keeping strict adherence to global ESG standards, with deep expertise in the manufacturing sector.",
+    img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2000&auto=format&fit=crop",
+    points: [
+      "Turnkey project execution and management",
+      "Network of certified ESG implementation partners",
+      "Specialized solutions for heavy manufacturing",
+      "On-ground deployment of energy and waste systems"
+    ],
+    fullText: [
+      "Many consulting firms deliver a strategy and walk away. At AstraESG, we recognize that the real challenge lies in execution. That's why we offer end-to-end implementation services, seamlessly bridging the gap between high-level boardroom strategy and on-the-ground operational reality.",
+      "We have cultivated an 'army' of vetted, specialized service providers—from renewable energy installers and waste management experts to industrial engineers. We act as your single point of contact, orchestrating these partners to implement every step of your ESG roadmap while strictly adhering to international sustainability standards.",
+      "Our implementation capabilities are particularly robust in the manufacturing sector. We understand the complexities of factory floors, heavy machinery, and complex supply chains. Whether it's retrofitting facilities for energy efficiency, deploying water recycling plants, or transitioning to sustainable raw materials, we deliver turnkey solutions that drive measurable impact."
+    ]
   }
 ];
